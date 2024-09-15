@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            
+        padding: 200px 0px;
+        text-align: center;
+        border: 2px solid black;
+        width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="darkmood()" >darkmood</button>
+    <center>
+       
+        <img id="demo" width="200px" src="lampon.png" alt="">
+        <br>
+        <button onclick="onlamp()">on</button>
+        <button onclick="offlamp()">off</button>
+
+    </center>
+    <div>
+        <div class="box" id="box">
+  <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+
+        </div>
+    </div>
+
+<script>
+function onlamp(){
+
+document.getElementById("demo").src="lampon.png"
+
+}
+function offlamp(){
+
+document.getElementById("demo").src="lampoff.png"
+
+}
+function darkmood(){
+document.getElementById("box").style.backgroundColor="black";
+document.getElementById("box").style.color="white";
+}
+
+</script>
+
+
+</body>
+</html>
